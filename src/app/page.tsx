@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import clsx from "clsx";
 export default function Home() {
   return (
