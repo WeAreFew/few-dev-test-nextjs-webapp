@@ -7,6 +7,7 @@
 /********** COLORS **********/
 /***** Brand Colors (Hi-Fi Design) *****/
 $color-blue: #2196f3;
+$color-blue-dark: #01579b;
 
 // Alert Colors
 $color-info: #1c49e8;
@@ -32,6 +33,7 @@ $color-greyscale-900: #262626;
 $color-white: #fff;
 
 $color-primary-main: $color-blue;
+$color-primary-dark: $color-blue-dark;
 
 // Theme - Text colors
 $color-body-bg: $color-white;
@@ -81,5 +83,7 @@ $navbar-height: 64px;
 $radius-full: 50%;
 
 // layout
-$section-p-x: 2vw;
+$section-p-x: 6vw;
 $section-p-y: 3rem;
+
+$container-max-width: 1200px;

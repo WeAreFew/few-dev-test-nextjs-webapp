@@ -1,5 +1,20 @@
 .siteHeader {
   @include section(0.5rem);
-  background-color: $color-primary-main;
+  background-color: $color-primary-dark;
   color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  text-transform: uppercase;
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
 }

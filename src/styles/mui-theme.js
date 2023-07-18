@@ -7,6 +7,7 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: vars.colorPrimary,
+      dark: vars.colorPrimaryDark,
     },
   },
   components: {
