@@ -1,6 +1,8 @@
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
 import AppThemeProvider from "@/components/AppThemeProvider";
+import SiteHeader from "@/components/organisms/SiteHeader/SiteHeader";
+import SiteFooter from "@/components/organisms/SiteFooter/SiteFooter";
 export const metadata: Metadata = {
   title: "Few Dev Test",
   description: "Developer test for Few",
@@ -19,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <SiteHeader />
         <AppThemeProvider>{children}</AppThemeProvider>
+        <SiteFooter />
       </body>
     </html>
   );
