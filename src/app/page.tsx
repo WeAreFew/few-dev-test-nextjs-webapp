@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
-
+import clsx from "clsx";
 export default function Home() {
   return (
-    <main className="section">
+    <main className={clsx("section", styles.homePageContent)}>
       <h1>Few Developer Test</h1>
       <p>
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
