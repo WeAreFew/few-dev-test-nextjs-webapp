@@ -6,32 +6,13 @@
 
 /********** COLORS **********/
 /***** Brand Colors (Hi-Fi Design) *****/
-$color-primary-main: #7c23f8;
-$color-primary-dark: #46158a;
-$color-primary-deep-purple: #321660;
-$color-primary-light: #8b37ff;
-$color-primary-lighter: #7c23f861;
-$color-primary-selected: #7c23f820;
-$color-primary-black: #000000de;
-$color-primary-black-transparent: #00000061;
-$color-primary-white: #ffffff;
-
-$color-secondary-main: #0ab342;
-$color-secondary-amber: #ffc107;
-$color-secondary-teal: #009688;
-$color-secondary-blue: #00a3ff;
-$color-secondary-light-blue: #03a9f4;
-$color-secondary-purple: #8e24aa;
-$color-secondary-pink: #e91e63;
-$color-secondary-grey-400: #bdbdbd;
+$color-blue: #2196f3;
 
 // Alert Colors
 $color-info: #1c49e8;
 $color-success: #4dd1d4;
 $color-warning: #ffb300;
-$color-danger: #ff002d;
-$color-error: #e53935;
-
+$color-error: #ff002d;
 // Greyscale
 $color-black: #000;
 $color-grey-darkest: #333;
@@ -48,11 +29,13 @@ $color-greyscale-600: #999;
 $color-greyscale-700: #737373;
 $color-greyscale-800: #4c4c4c;
 $color-greyscale-900: #262626;
+$color-white: #fff;
+
+$color-primary-main: $color-blue;
 
 // Theme - Text colors
-$color-body-bg: $color-primary-white;
-$color-text: $color-primary-black;
-$color-text-disabled: $color-primary-black-transparent;
+$color-body-bg: $color-white;
+$color-text: $color-black;
 
 /********** TEXT & FONTS **********/
 $render-mode: optimizelegibility !default;

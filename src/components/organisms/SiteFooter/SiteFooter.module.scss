@@ -1,3 +1,8 @@
 .siteFooter {
   @include section();
+
+  .copyright {
+    font-size: $text-size-xs;
+    text-align: center;
+  }
 }

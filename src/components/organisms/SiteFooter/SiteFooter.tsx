@@ -5,7 +5,9 @@ interface Props {}
 function SiteFooter({}: Props) {
   return (
     <footer className={styles.siteFooter}>
-      <p>&copy; Work With Few. </p>
+      <p className={styles.copyright}>
+        &copy; {new Date().getFullYear()} Work With Few.
+      </p>
     </footer>
   );
 }
