@@ -1,0 +1,102 @@
+// VARIABLES
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Serif:wght@400;700&display=swap";
+
+/********** COLORS **********/
+/***** Brand Colors (Hi-Fi Design) *****/
+$color-primary-main: #7c23f8;
+$color-primary-dark: #46158a;
+$color-primary-deep-purple: #321660;
+$color-primary-light: #8b37ff;
+$color-primary-lighter: #7c23f861;
+$color-primary-selected: #7c23f820;
+$color-primary-black: #000000de;
+$color-primary-black-transparent: #00000061;
+$color-primary-white: #ffffff;
+
+$color-secondary-main: #0ab342;
+$color-secondary-amber: #ffc107;
+$color-secondary-teal: #009688;
+$color-secondary-blue: #00a3ff;
+$color-secondary-light-blue: #03a9f4;
+$color-secondary-purple: #8e24aa;
+$color-secondary-pink: #e91e63;
+$color-secondary-grey-400: #bdbdbd;
+
+// Alert Colors
+$color-info: #1c49e8;
+$color-success: #4dd1d4;
+$color-warning: #ffb300;
+$color-danger: #ff002d;
+$color-error: #e53935;
+
+// Greyscale
+$color-black: #000;
+$color-grey-darkest: #333;
+$color-grey-darker: #727476;
+$color-grey-dark: #8c8e90;
+$color-grey: #a7a9ac;
+$color-grey-light: #d4d6db;
+$color-grey-lighter: #dee0e4;
+$color-grey-lightest: #eeeeee;
+$color-greyscale-100: #f2f2f2;
+$color-greyscale-400: #ccc;
+$color-greyscale-500: #bfbfbf;
+$color-greyscale-600: #999;
+$color-greyscale-700: #737373;
+$color-greyscale-800: #4c4c4c;
+$color-greyscale-900: #262626;
+
+// Theme - Text colors
+$color-body-bg: $color-primary-white;
+$color-text: $color-primary-black;
+$color-text-disabled: $color-primary-black-transparent;
+
+/********** TEXT & FONTS **********/
+$render-mode: optimizelegibility !default;
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-zilla-slab: "Zilla Slab", serif;
+$font-family-sans-serif: "Work Sans", "Helvetica", "Arial", sans-serif;
+$font-family-serif: "Noto Serif", "Century Old Style Std", serif;
+
+$font-body: $font-family-roboto;
+$font-heading: $font-family-zilla-slab;
+
+// Sizes
+$text-size-body: 16px;
+$text-size-main: 1rem;
+$text-size-1: 3rem;
+$text-size-2: 2rem;
+$text-size-3: 1.5rem;
+$text-size-4: 1.25rem;
+$text-size-4-1: 1.147rem;
+$text-size-5: 1.125rem;
+$text-size-sm: 0.875rem;
+$text-size-xs: 0.75rem;
+$text-size-xxl: 6rem;
+$line-height: 1;
+
+// Responsive Breakpoints
+$mobile: 450px;
+$tablet: 577px;
+$desktop: 769px;
+$widescreen: 1025px;
+$full-hd: 1345px;
+
+// Misc sizes
+$radius-smaller: 4px;
+$radius-small: 6px;
+$radius: 12px;
+$radius-large: 18px;
+$radius-extra-large: 24px;
+$sidenav-expanded: 300px;
+$sidenav-collapsed: 75px;
+$no-sidenav: 39px;
+$navbar-height: 64px;
+$radius-full: 50%;
+
+// layout
+$section-p-x: 2vw;
+$section-p-y: 3rem;

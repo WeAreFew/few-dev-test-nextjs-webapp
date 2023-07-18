@@ -1,0 +1,44 @@
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $text-size-body;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: $render-mode;
+  text-size-adjust: 100%;
+  background-color: $color-body-bg;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+  background-color: $color-body-bg;
+  font-family: $font-body;
+  color: $color-text;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100vw;
+  padding-right: 0 !important; // override MUI padding for selected elements
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+}
+
+.section {
+  @include section;
+}

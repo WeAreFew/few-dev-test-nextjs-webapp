@@ -1,0 +1,31 @@
+// This is a .module file that we use to map sass vars to MUI Theme Provider JS Vars
+@import "variables";
+
+// Export SASS Variables for use in JS Theme
+:export {
+  textSizeBody: $text-size-body;
+  textSize1: $text-size-1;
+
+  colorPrimaryText: $color-primary-black;
+
+  colorPrimaryPurple: $color-primary-main;
+  colorPurpleDark: $color-primary-dark;
+  colorPurpleLight: $color-primary-light;
+  colorPurpleLighter: $color-primary-lighter;
+
+  colorSecondaryGreen: $color-secondary-main;
+  colorSecondaryAmber: $color-secondary-amber;
+  colorSecondaryTeal: $color-secondary-teal;
+  colorSecondaryBlue: $color-secondary-blue;
+  colorSecondaryLightBlue: $color-secondary-light-blue;
+  colorSecondaryPurple: $color-secondary-purple;
+  colorSecondaryPink: $color-secondary-pink;
+  colorSecondaryGrey: $color-secondary-grey-400;
+
+  greyscale400: $color-greyscale-400;
+  greyscale500: $color-greyscale-500;
+  greyscale600: $color-greyscale-600;
+  greyscale700: $color-greyscale-700;
+  greyscale800: $color-greyscale-800;
+  greyscale900: $color-greyscale-900;
+}

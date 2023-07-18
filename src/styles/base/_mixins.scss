@@ -1,0 +1,25 @@
+// MIXINS
+// Responsive Mixins
+// Breakpoint
+@mixin above($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin below($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin between($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+// layout
+@mixin section($padding-y: $section-p-y) {
+  padding: $padding-y $section-p-x;
+}

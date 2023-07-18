@@ -1,0 +1,16 @@
+{
+  "tabWidth": 2,
+  "defaultSeverity": "warning",
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "selector-id-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "selector-type-case": "lower"
+  },
+  "ignoreFiles": ["**/*.js", "src/styles/**/*.scss"],
+  "ignoreDisables": false,
+  "fix": true
+}
