@@ -38,6 +38,11 @@ h3,
 h4 {
   font-family: $font-heading;
 }
+p {
+  line-height: 1.5;
+  font-size: $text-size-body;
+  margin-bottom: 1rem;
+}
 
 .section {
   @include section;

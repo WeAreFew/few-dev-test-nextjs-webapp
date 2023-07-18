@@ -1,8 +1,5 @@
 // VARIABLES
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Serif:wght@400;700&display=swap";
 
 /********** COLORS **********/
 /***** Brand Colors (Hi-Fi Design) *****/
@@ -42,13 +39,12 @@ $color-text: $color-black;
 
 /********** TEXT & FONTS **********/
 $render-mode: optimizelegibility !default;
-$font-family-roboto: "Roboto", sans-serif;
-$font-family-zilla-slab: "Zilla Slab", serif;
-$font-family-sans-serif: "Work Sans", "Helvetica", "Arial", sans-serif;
+
+$font-family-sans-serif: "Roboto", "Helvetica", "Arial", sans-serif;
 $font-family-serif: "Noto Serif", "Century Old Style Std", serif;
 
-$font-body: $font-family-roboto;
-$font-heading: $font-family-zilla-slab;
+$font-body: $font-family-sans-serif;
+$font-heading: $font-family-sans-serif;
 
 // Sizes
 $text-size-body: 16px;
