@@ -4,7 +4,7 @@ import clsx from "clsx";
 export default function Home() {
   return (
     <main className={clsx("section", styles.homePageContent)}>
-      <div class="container">
+      <div className="container">
         <h1>Few Developer Test</h1>
         <p>
           Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
