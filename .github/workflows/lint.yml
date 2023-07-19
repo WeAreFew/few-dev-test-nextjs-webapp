@@ -1,0 +1,29 @@
+# .github/workflows/lint.yml
+
+# Workflow name
+name: "Linters"
+
+# Event for the workflow
+on: push
+
+# List of jobs
+jobs:
+  test:
+    name: Run linters
+    # Operating System
+    runs-on: ubuntu-latest
+    # Job steps
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        # 👇 Install dependencies
+        run: npm install
+      - name: Eslint & Prettier
+        # 👇 Run check for Eslint + Prettier
+        run: npm run lint
+      - name: Typescript linter
+        # 👇 Run check for Typescript
+        run: npm run type-check
+      - name: Stylelint
+        # 👇 Run check for Stylelint
+        run: npm run lint:scss
