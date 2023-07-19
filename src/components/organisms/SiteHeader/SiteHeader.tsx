@@ -9,7 +9,7 @@ export default function SiteHeader({}: Props) {
   return (
     <header className={styles.siteHeader}>
       <Logo />
-      <nav class={styles.mainNav}>
+      <nav className={styles.mainNav}>
         <Link href="/">Home</Link>
         <Button variant="contained" color="primary">
           Sign Up
