@@ -11,9 +11,11 @@ export default function SiteHeader({}: Props) {
       <Logo />
       <nav className={styles.mainNav}>
         <Link href="/">Home</Link>
-        <Button variant="contained" color="primary">
-          Sign Up
-        </Button>
+        <Link href="/sign-up">
+          <Button variant="contained" color="primary">
+            Sign Up
+          </Button>
+        </Link>
       </nav>
     </header>
   );

@@ -1,6 +1,8 @@
 import Button from "@mui/material/Button";
 import styles from "./page.module.scss";
 import clsx from "clsx";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className={clsx("section", styles.homePageContent)}>
@@ -17,7 +19,9 @@ export default function Home() {
           magna mollis euismod. Vestibulum id ligula porta felis euismod semper.
           Maecenas faucibus mollis interdum.
         </p>
-        <Button variant="outlined">Sign Up</Button>
+        <Link href="/sign-up">
+          <Button variant="outlined">Sign Up</Button>
+        </Link>
       </div>
     </main>
   );
