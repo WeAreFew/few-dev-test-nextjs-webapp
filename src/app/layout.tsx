@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import AppThemeProvider from "@/components/AppThemeProvider";
 import SiteHeader from "@/components/organisms/SiteHeader/SiteHeader";
 import SiteFooter from "@/components/organisms/SiteFooter/SiteFooter";
+import UserDataProvider from "@/components/UserDataProvider";
 export const metadata: Metadata = {
   title: "Few Dev Test",
   description: "Developer test for Few",
@@ -25,7 +26,9 @@ export default function RootLayout({
       </head>
       <body>
         <SiteHeader />
-        <AppThemeProvider>{children}</AppThemeProvider>
+        <AppThemeProvider>
+          <UserDataProvider>{children}</UserDataProvider>
+        </AppThemeProvider>
         <SiteFooter />
       </body>
     </html>

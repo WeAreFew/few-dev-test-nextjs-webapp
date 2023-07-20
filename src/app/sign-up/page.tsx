@@ -1,4 +1,5 @@
 "use client";
+import { useContext } from "react";
 import { useRouter } from "next/navigation";
 import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -6,6 +7,8 @@ import { z } from "zod";
 import clsx from "clsx";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+
+import { UserContext } from "@/components/UserDataProvider";
 
 import styles from "./page.module.scss";
 
@@ -36,6 +39,7 @@ const userSchema = z
 
 export default function SignUp() {
   const router = useRouter();
+  const { setUserNames } = useContext(UserContext);
   const {
     register,
     handleSubmit,
@@ -45,9 +49,14 @@ export default function SignUp() {
   });
 
   const onFormSubmit: SubmitHandler<FieldValues> = (formData) => {
-    console.log({ formData });
+    const { firstName, lastName } = formData;
 
-    // router.push("/sign-up/success");
+    const capFirstName = `${firstName.charAt(0)}${firstName.slice(1)}`;
+    const capLastName = `${lastName.charAt(0)}${lastName.slice(1)}`;
+
+    if (!!errors) return;
+    setUserNames(capFirstName, capLastName);
+    router.push("/sign-up/success");
   };
 
   return (
