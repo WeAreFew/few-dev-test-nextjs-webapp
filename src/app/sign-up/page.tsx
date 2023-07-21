@@ -64,8 +64,8 @@ export default function SignUp() {
   return (
     <main className="section">
       <div className={clsx("container", styles.signupContainer)}>
-        <h1>Sign Up</h1>
-        <p>
+        <h1 className={styles.signupHeader}>Sign Up</h1>
+        <p className={styles.loginText}>
           Already have an acount? <a>Log In</a>
         </p>
         <form

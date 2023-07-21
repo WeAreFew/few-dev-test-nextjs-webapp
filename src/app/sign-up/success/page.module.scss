@@ -1,0 +1,15 @@
+.welcome {
+  font-weight: 400;
+}
+
+.successHeader {
+  font-size: $text-size-1;
+  margin: 0;
+}
+
+.successContainer {
+  width: 40%;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
