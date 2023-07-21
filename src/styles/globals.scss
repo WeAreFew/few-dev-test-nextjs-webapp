@@ -62,8 +62,11 @@ p {
 
 .section {
   @include section;
-  height: 100%;
+  height: calc(100vh - 400px);
+  display: grid;
+  place-items: center;
 }
+
 .container {
   max-width: $container-max-width;
   margin: 0 auto;

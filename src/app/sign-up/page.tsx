@@ -50,14 +50,10 @@ export default function SignUp() {
 
   const onFormSubmit: SubmitHandler<FieldValues> = (formData) => {
     const { firstName, lastName } = formData;
-
-    const capFirstName = `${firstName.charAt(0)}${firstName.slice(1)}`;
-    const capLastName = `${lastName.charAt(0)}${lastName.slice(1)}`;
-
     const errorsPresent = Object.keys(errors).length > 0;
 
     if (errorsPresent) return;
-    setUserNames(capFirstName, capLastName);
+    setUserNames(firstName, lastName);
     router.push("/sign-up/success");
   };
 
